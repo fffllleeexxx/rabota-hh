@@ -34,15 +34,17 @@
         <TextBlock  HorizontalAlignment="Left" Grid.Row="3" Grid.Column="0" 
                     TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16" 
                     RenderTransformOrigin="0.491,2.328" Margin="10,10,0,0" Height="85"><Run Text="Введите среднюю дневную выручку продавца"/><LineBreak/><Run/></TextBlock>
-        
+
         <TextBox x:Name="firstName" HorizontalAlignment="Left" Height="23" Margin="205,23,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <TextBox x:Name="data" HorizontalAlignment="Left" Height="23" Margin="205,13,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <TextBox x:Name="revenue" HorizontalAlignment="Left" Height="23" Margin="205,30,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
-        
+
         <Button Content="Рассчитать комиссионные" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="200" Height="30" Click="Button_Click" />
         <TextBlock Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="2" TextWrapping="Wrap" Text="Комиссионные продавца" VerticalAlignment="Top" Margin="0 30 0 0" FontSize="16"/>
 
         <TextBox x:Name="commissions" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Margin="0 30" FontSize="16"/>
-        
+
+        <Button Width="200" Height="30" Grid.Column="2" Content="Создать расчётный лист" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Click="Button_Click_1"/>
+
     </Grid>
 </Window>

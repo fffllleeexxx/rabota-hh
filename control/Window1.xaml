@@ -7,13 +7,6 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <DataGrid ItemsSource="{Binding list}" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Имя" Binding="{Binding Path=Name}" Width="90" />
-                <DataGridTextColumn Header="Комиссионные" Binding="{Binding Path=Commissions}" Width="100" />
-                <DataGridTextColumn Header="Дневная выручка" Binding="{Binding Path=Revenue}" Width="110" />
-                <DataGridTextColumn Header="Стаж работы" Binding="{Binding Path=Seniority}" Width="90" />
-            </DataGrid.Columns>
-        </DataGrid>
+        <DataGrid Name="dataGrid" AutoGenerateColumns="True" />
     </Grid>
 </Window>

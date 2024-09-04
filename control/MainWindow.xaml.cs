@@ -68,9 +68,12 @@ namespace control
             }
 
             Person person = new Person(firstName.Text, c, Convert.ToInt32(revenue.Text), Convert.ToString(dateNow - parsedDate));
-            list.Add(person);
+            list.Add(person);    
+        }
 
-            Window1 window1 = new Window1();
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1(list);
             window1.Show();
         }
     }

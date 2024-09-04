@@ -20,10 +20,10 @@ namespace control
     /// </summary>
     public partial class Window1 : Window
     {
-        public Window1()
+        public Window1(List<Person> people)
         {
             InitializeComponent();
-            DataContext = this;
+            dataGrid.ItemsSource = people;
         }
     }
 }
